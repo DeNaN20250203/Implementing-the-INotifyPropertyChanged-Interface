@@ -21,7 +21,7 @@ namespace ImplementingInterfaceINotifyPropertyChanged_001
 			set
 			{
 				_name = value; // Устанавливаем новое значение имени
-							   // Вызываем событие PropertyChanged, чтобы уведомить об изменении свойства
+				// Вызываем событие PropertyChanged, чтобы уведомить об изменении свойства
 				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Name)));
 			}
 		}
